@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+        table,table tr th, table tr td { border:1px solid #0094ff; }
+        table { width: 1000px; min-height: 40px; line-height: 30px; text-align: center; border-collapse: collapse;}
+    </style>
+    <table class = "table table-bordered" ALIGN="center">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>名称</th>
+                <th>适用范围分类</th>
+                <th>业务环节分类</th>
+                <th>知识类型分类</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td th:text=${name1}>(name1)</td>
+                <td th:text=${range1}>(range1)</td>
+                <td th:text="${huanjie1}">(huanjie1)</td>
+                <td th:text="${knowledge1}">(knowledge1)</td>
+            </tr>
+            <tr>
+                <td >2</td>
+                <td th:text=${name2}>(name2)</td>
+                <td th:text=${range2}>(range2)</td>
+                <td th:text="${huanjie2}">(huanjie2)</td>
+                <td th:text="${knowledge2}">(knowledge2)</td>
+            </tr>
+            <tr>
+                <td >3</td>
+                <td th:text=${name3}>(name3)</td>
+                <td th:text=${range3}>(range3)</td>
+                <td th:text="${huanjie3}">(huanjie3)</td>
+                <td th:text="${knowledge3}">(knowledge3)</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

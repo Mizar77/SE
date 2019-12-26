@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    <div>
+        <label>请输入您对该工业APP的命名：</label>
+        <input name="name" type="text">
+        <div>
+            <button type="submit" value="pre" name="action">返回上一页</button>
+            <button name="action" type="submit" value="ok">确认提交</button>
+        </div>
+    </div>
+
+</form>
+<p class="lead" th:text="${wrongInfo}">(wrongInfo)</p>
+<p class="lead" th:text="${rightInfo}">(rightInfo)</p>
+</body>
+</html>

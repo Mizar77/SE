@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    <div align = "center">
+    <div>
+        <label>ID：</label>
+        <input name="id" type="text" id="userId">
+    </div>
+    <div>
+        <label>用户名：</label>
+        <input name="name" type="text" id="name">
+    </div>
+    <div>
+        <label>密码:</label>
+        <input name="password" type="text" id="userPassword">
+    </div>
+    <div>
+        <button name="action" type="submit" style="height:40px;width:60px;" value = "login">注册</button>
+        <button name="action" type="submit" style="height:40px;width:60px;" value="return">返回</button>
+    </div>
+    </div>
+</form>
+<div>
+    <p class="lead" th:text="${wrongInfo}">(wrongInfo)</p>
+</div>
+</body>
+</html>
